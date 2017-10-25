@@ -10,9 +10,8 @@ import Foundation
 import Alamofire
 
 class Connector {
-    static func getResponseObject(term: String, completion: @escaping (_ artists: [Artist])->()) {
+    func getResponseObject(term: String, completion: @escaping (_ artists: [Artist])->()) {
         let URL = "https://itunes.apple.com/search?term=\(term)&country=es&media=music&entity=allArtist"
-        
         Alamofire.request(URL).responseObject { (response: DataResponse<Artists>) in
             if let artists = response.result.value {
                 if let results = artists.results {
