@@ -90,7 +90,7 @@ extension ViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.isEmpty { return }
         
-        Connector().getResponseObject(term: searchText.replacingOccurrences(of: " ", with: "+")) {
+        Connector().getArtistNameAndPrimaryGenre(term: searchText.replacingOccurrences(of: " ", with: "+")) {
             self.artists = $0
             self.tableView.reloadData()
         }
