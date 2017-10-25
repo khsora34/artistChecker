@@ -11,7 +11,7 @@ import Alamofire
 import AlamofireObjectMapper
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
@@ -28,6 +28,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //Cambia los parámetros
         tableView.dataSource = self
         
+        searchBar.delegate = self
         //Introduzco un elemento mío en el ciclo de vida
         let nib = UINib(nibName: "ArtistTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "ArtistTableViewCellID")
@@ -64,37 +65,27 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let detailStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
         guard let controller = detailStoryboard.instantiateViewController(withIdentifier: "ArtistsDetailID") as? ArtistsDetailController  else { /*No hagas nada*/ return }
-            controller.artist = chosenArtist
-
+        controller.artist = chosenArtist
+        
         //Sacamos al ArtistDetailController
-            if let nav = navigationController {
-                nav.pushViewController(controller, animated: true)
-            }
+        if let nav = navigationController {
+            nav.pushViewController(controller, animated: true)
+        }
     }
     
-    // MARK: Actions
+}
+
+extension ViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        view.endEditing(true)
+    }
     
-    @IBAction func buttonPressed(_ sender: Any) {
-        guard let searchBarText = self.searchBar.text else { return; }
-        if(searchBarText.isEmpty){
-            return;
-        }
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.isEmpty { return }
         
-        var searchTerms = searchBarText.split(separator: " ")
-        
-        var term = searchTerms[0]
-        if(searchTerms.count > 1){
-            for index in 1...searchTerms.count - 1{
-                term += "+\(searchTerms[index])"
-            }
-        }
-        
-        Connector.getResponseObject(term: String(term)) {
+        Connector().getResponseObject(term: searchText.replacingOccurrences(of: " ", with: "+")) {
             self.artists = $0
             self.tableView.reloadData()
         }
-
     }
-
 }
-
