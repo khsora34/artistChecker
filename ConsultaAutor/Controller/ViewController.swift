@@ -21,7 +21,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        title = "Search Artist"
         //El delegate permite a una clase delegar una funcionalidad a la implementada en otra clase.
         tableView.delegate = self
         
@@ -29,6 +29,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.dataSource = self
         
         searchBar.delegate = self
+        
+        tableView.scrollsToTop = true
+        tableView.separatorStyle = .none
         //Introduzco un elemento mío en el ciclo de vida
         let nib = UINib(nibName: "ArtistTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "ArtistTableViewCellID")
@@ -73,6 +76,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
 }
 
 extension ViewController: UISearchBarDelegate {
@@ -87,5 +94,13 @@ extension ViewController: UISearchBarDelegate {
             self.artists = $0
             self.tableView.reloadData()
         }
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        view.endEditing(true)
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
     }
 }
