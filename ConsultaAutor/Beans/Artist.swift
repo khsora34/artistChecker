@@ -10,6 +10,7 @@ import Foundation
 import ObjectMapper
 
 class Artist: Mappable, Comparable{
+    var id: Int?
     var name: String?
     var genre: String?
     
@@ -18,6 +19,7 @@ class Artist: Mappable, Comparable{
     }
     
     func mapping(map: Map) {
+        id <- map["artistId"]
         name <- map["artistName"]
         genre <- map["primaryGenreName"]
     }
@@ -30,7 +32,7 @@ class Artist: Mappable, Comparable{
     }
     
     static func ==(lhs: Artist, rhs: Artist) -> Bool {
-        return lhs.name == rhs.name
+        return lhs.id == rhs.id
     }
     
 }

@@ -10,7 +10,6 @@ import Foundation
 import ObjectMapper
 
 class Artists: Mappable {
-    
     var results: [Artist]?
     
     required init?(map: Map) {}
