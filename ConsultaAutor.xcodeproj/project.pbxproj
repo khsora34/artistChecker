@@ -19,6 +19,7 @@
 		53A2E8471F9E524400180CE9 /* ArtistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A2E8451F9E524400180CE9 /* ArtistTableViewCell.swift */; };
 		53A2E8481F9E524400180CE9 /* ArtistTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53A2E8461F9E524400180CE9 /* ArtistTableViewCell.xib */; };
 		53A2E84A1F9E55CB00180CE9 /* ArtistsDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A2E8491F9E55CB00180CE9 /* ArtistsDetailController.swift */; };
+		53BDFCE11FA0ED6E00F45E2A /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BDFCE01FA0ED6E00F45E2A /* Album.swift */; };
 		53F1255A1F9FA3E600A4A4D1 /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F125581F9FA3E600A4A4D1 /* AlbumTableViewCell.swift */; };
 		53F1255B1F9FA3E600A4A4D1 /* AlbumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53F125591F9FA3E600A4A4D1 /* AlbumTableViewCell.xib */; };
 		53FF393A1F9E27E400B2EFED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FF39391F9E27E400B2EFED /* AppDelegate.swift */; };
@@ -54,6 +55,7 @@
 		53A2E8451F9E524400180CE9 /* ArtistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistTableViewCell.swift; sourceTree = "<group>"; };
 		53A2E8461F9E524400180CE9 /* ArtistTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtistTableViewCell.xib; sourceTree = "<group>"; };
 		53A2E8491F9E55CB00180CE9 /* ArtistsDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsDetailController.swift; sourceTree = "<group>"; };
+		53BDFCE01FA0ED6E00F45E2A /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		53F125581F9FA3E600A4A4D1 /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
 		53F125591F9FA3E600A4A4D1 /* AlbumTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumTableViewCell.xib; sourceTree = "<group>"; };
 		53FF39361F9E27E400B2EFED /* ConsultaAutor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConsultaAutor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +96,7 @@
 				53A2E83F1F9E3F3300180CE9 /* Artist.swift */,
 				53A2E8431F9E48A900180CE9 /* Artists.swift */,
 				53A2E8411F9E441400180CE9 /* Connector.swift */,
+				53BDFCE01FA0ED6E00F45E2A /* Album.swift */,
 			);
 			path = Beans;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				53A2E8441F9E48A900180CE9 /* Artists.swift in Sources */,
 				53A2E84A1F9E55CB00180CE9 /* ArtistsDetailController.swift in Sources */,
 				53A2E8401F9E3F3300180CE9 /* Artist.swift in Sources */,
+				53BDFCE11FA0ED6E00F45E2A /* Album.swift in Sources */,
 				53A2E8421F9E441400180CE9 /* Connector.swift in Sources */,
 				53A2E8471F9E524400180CE9 /* ArtistTableViewCell.swift in Sources */,
 				53F1255A1F9FA3E600A4A4D1 /* AlbumTableViewCell.swift in Sources */,

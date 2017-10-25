@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+class Album{
+    var artist: Artist?
+    var name: String?
+    var img: UIImage
+}
