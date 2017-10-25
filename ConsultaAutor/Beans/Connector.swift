@@ -10,14 +10,17 @@ import Foundation
 import Alamofire
 
 class Connector {
-    func getResponseObject(term: String, completion: @escaping (_ artists: [Artist])->()) {
-        let URL = "https://itunes.apple.com/search?term=\(term)&country=es&media=music&entity=allArtist"
-        Alamofire.request(URL).responseObject { (response: DataResponse<Artists>) in
-            if let artists = response.result.value {
-                if let results = artists.results {
-                    completion(results.sorted())
-                }
+    func getArtistNameAndPrimaryGenre(term: String, completion: @escaping (_ artists: [Artist])->()) {
+        let url = "https://itunes.apple.com/search?term=\(term)&country=es&media=music&entity=allArtist"
+        Alamofire.request(url).responseObject { (response: DataResponse<Artists>) in
+            if let results = response.value?.results {
+                completion(results)
             }
         }
+    }
+    
+    func getArtistsDiscographyById(id: Int){
+        let url = "https://itunes.apple.com/search?term=\(id)&country=es&media=music&entity=allArtist"
+        
     }
 }
