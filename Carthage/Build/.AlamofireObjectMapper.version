@@ -8,20 +8,20 @@
   "watchOS" : [
     {
       "name" : "AlamofireObjectMapper",
-      "hash" : "72c95afaee7b2f1f52fa61e6479734dc7fc17ca92d3a4969786fbf345027887d"
+      "hash" : "972b790ce402a641430735556e09234480eaf585f7d3ab5e5c09b81babc1f7a3"
     }
   ],
   "tvOS" : [
     {
       "name" : "AlamofireObjectMapper",
-      "hash" : "cba35085cb0e26b1434dacd725097ab42230cae499bfb9ef11dcedbf8a1493e4"
+      "hash" : "78f70f9973d6ef77afb72d7e164f603dec6faf9ecd360bf7b1531bb1e0e4598e"
     }
   ],
   "commitish" : "5.0.0",
   "iOS" : [
     {
       "name" : "AlamofireObjectMapper",
-      "hash" : "09e83cf015576000b0d6fd4734bf5460cb40c87fca590db39ae6f82c451b7348"
+      "hash" : "1a6845a9bfd5c05085a29b9cadd4103bd3bf9c7f9e109d9741b0462273a4a7ac"
     }
   ]
 }

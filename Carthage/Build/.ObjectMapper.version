@@ -8,20 +8,20 @@
   "watchOS" : [
     {
       "name" : "ObjectMapper",
-      "hash" : "b206322980dc78a38a93f68dfaf6575b15400a2673efec3caf2b38d617cbd9fd"
+      "hash" : "81e5b9781806cc7120fe191fa0ef5a176b21e744c351f87fdfbbd8a6026c4ef8"
     }
   ],
   "tvOS" : [
     {
       "name" : "ObjectMapper",
-      "hash" : "80df4c62a33da09b36c0416e4800310deb77afff387682b94ef7fad72268791f"
+      "hash" : "425b4a48bb5240dbb5eb896ae2d08c8a0c9d8cf999a66e2b6e280cde771b002b"
     }
   ],
   "commitish" : "3.0.0",
   "iOS" : [
     {
       "name" : "ObjectMapper",
-      "hash" : "6f5e17077e8371dac365afaa8accf0de68bcbf12fc2203dfb0a71131f16100a7"
+      "hash" : "51483245d6c6a3f2a57cf26d890de1d23911caa280eb58b3e49502b02d6ce850"
     }
   ]
 }
