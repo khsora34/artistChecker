@@ -11,11 +11,12 @@ import UIKit
 class ArtistsDetailController: UIViewController {
 
     @IBOutlet weak var artistName: UILabel!
+    //Exigimos la variable para que termine de cargar.
     var artist: Artist!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        artistName.text = artist.artistNamem
+        artistName.text = artist.name
     }
 
     override func didReceiveMemoryWarning() {

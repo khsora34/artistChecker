@@ -1,0 +1,2 @@
+github "tristanhimmelman/AlamofireObjectMapper" ~> 5.0
+github "Alamofire/Alamofire" ~> 4.5

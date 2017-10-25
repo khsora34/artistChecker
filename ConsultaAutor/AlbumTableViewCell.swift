@@ -10,6 +10,9 @@ import UIKit
 
 class AlbumTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var nombreAlbum: UILabel!
+    @IBOutlet weak var añoAlbum: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
