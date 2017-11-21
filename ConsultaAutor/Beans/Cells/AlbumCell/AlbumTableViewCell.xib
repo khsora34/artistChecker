@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="154" id="KGk-i7-Jjw" customClass="AlbumTableViewCell" customModule="ConsultaAutor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="586" height="154"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="586" height="153.66666666666666"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mgs-uy-99M">
+                        <rect key="frame" x="157" y="7" width="421" height="140"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre del álbum" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Yze-gr-DJO">
+                                <rect key="frame" x="8" y="22" width="213" height="98"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9999" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6t-CM-QiX">
+                                <rect key="frame" x="361" y="26" width="52" height="90"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92300136063610216" green="0.96850974835795045" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Yze-gr-DJO" firstAttribute="leading" secondItem="Mgs-uy-99M" secondAttribute="leading" constant="8" id="78o-PP-aS7"/>
+                            <constraint firstItem="u6t-CM-QiX" firstAttribute="top" secondItem="Mgs-uy-99M" secondAttribute="top" constant="26" id="9b5-20-xno"/>
+                            <constraint firstAttribute="trailing" secondItem="u6t-CM-QiX" secondAttribute="trailing" constant="8" id="Ff7-lx-qvK"/>
+                            <constraint firstAttribute="bottom" secondItem="Yze-gr-DJO" secondAttribute="bottom" constant="20.5" id="Xtp-ZQ-8sd"/>
+                            <constraint firstAttribute="bottom" secondItem="u6t-CM-QiX" secondAttribute="bottom" constant="24" id="eSG-MM-bd1"/>
+                            <constraint firstItem="u6t-CM-QiX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Yze-gr-DJO" secondAttribute="trailing" constant="5" id="nNJ-Gd-kk1"/>
+                            <constraint firstItem="Yze-gr-DJO" firstAttribute="top" secondItem="Mgs-uy-99M" secondAttribute="top" constant="22" id="vhU-ir-bMH"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="kFT-aH-Q17">
+                        <rect key="frame" x="7" y="7" width="150" height="140"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="kFT-aH-Q17" secondAttribute="height" multiplier="15:14" id="izt-RE-637"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Yze-gr-DJO" firstAttribute="leading" secondItem="kFT-aH-Q17" secondAttribute="trailing" constant="8" id="Ahp-4U-xkT"/>
+                    <constraint firstAttribute="bottom" secondItem="Mgs-uy-99M" secondAttribute="bottom" constant="6.5" id="B7s-kc-N7y"/>
+                    <constraint firstItem="Mgs-uy-99M" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="Nat-3J-M6p"/>
+                    <constraint firstItem="kFT-aH-Q17" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="7" id="Qoa-cf-Oad"/>
+                    <constraint firstItem="kFT-aH-Q17" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="dNA-fK-lAj"/>
+                    <constraint firstAttribute="trailing" secondItem="Mgs-uy-99M" secondAttribute="trailing" constant="8" id="mel-np-5E0"/>
+                    <constraint firstAttribute="bottom" secondItem="kFT-aH-Q17" secondAttribute="bottom" constant="7" id="pfr-VT-Ykn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="albumImage" destination="kFT-aH-Q17" id="tWK-sq-jnv"/>
+                <outlet property="añoAlbum" destination="u6t-CM-QiX" id="IjB-9n-2bd"/>
+                <outlet property="containerView" destination="Mgs-uy-99M" id="zyG-JB-vi8"/>
+                <outlet property="nombreAlbum" destination="Yze-gr-DJO" id="83v-F7-bl8"/>
+            </connections>
+            <point key="canvasLocation" x="-187" y="229"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder" width="150" height="150"/>
+    </resources>
+</document>
