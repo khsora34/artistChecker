@@ -185,9 +185,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_MODULE_NAMESPACE_PUSH("ObjectMapper")
 
-@interface NSDateFormatter (SWIFT_EXTENSION(ObjectMapper))
-- (nonnull instancetype)initWithFormat:(NSString * _Nonnull)format locale:(NSString * _Nonnull)locale SWIFT_DEPRECATED_OBJC("Swift initializer 'DateFormatter.init(withFormat:locale:)' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
-@end
 
 SWIFT_MODULE_NAMESPACE_POP
 #pragma clang diagnostic pop
